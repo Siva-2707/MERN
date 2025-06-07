@@ -6,6 +6,9 @@ import Home from './pages/Home/Home.jsx';
 import Product from './pages/Product/Product.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       </Router>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}/>
     </>
   )
 }

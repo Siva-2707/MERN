@@ -1,17 +1,17 @@
 import { Button, Modal } from "react-bootstrap";
 
-const ProductModal = ({
+const ModelComponent = ({
   show,
   onClose,
   onSubmit,
   title,
   children,
-  submitLabel = "Save",
+  submitLabel,
 }) => {
   return (
     <Modal show={show} onHide={onClose}>
       <Modal.Header closeButton>
-        <Modal.Title>{title || "Modal"}</Modal.Title>
+        <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>{children}</Modal.Body>
@@ -28,4 +28,4 @@ const ProductModal = ({
   );
 };
 
-export default ProductModal;
+export default ModelComponent;

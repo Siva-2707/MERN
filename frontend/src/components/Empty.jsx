@@ -15,3 +15,5 @@ export const EmptyComponent = ({ message }) => {
     </div>
   );
 };
+
+export default EmptyComponent;
